@@ -37,7 +37,8 @@ try:
     fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
     #Show Table on the screen
     streamlit.dataframe(fruityvice_normalized)
- except URLError as e:
+ 
+except URLError as e:
    streamlit.error()
 
 #don't run anything pass here while we are troubleshooring
